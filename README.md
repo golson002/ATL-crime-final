@@ -1,12 +1,12 @@
 
 # Atlanta, GA Crime Analysis
 	
-This project visualizes crime rates for Atlanta, GA in 2021. Crime rates and type have a direct correlation to property value and the amount of resources available to the community. According to neighborhoods  the average for violent crimes is much higher than other cities in Georgia and outside of Georgia with similar population sizes. Atlanta police department provides yearly reports for crime including  type, location, time of day and other measurements.
+This project visualizes crime in Atlanta, GA in 2021. Crime rates and type have a direct correlation to property value and the amount of resources available to the community. According to the neighborhoodscout site, the average for violent crimes in Atlanta is much higher than other cities in Georgia and outside of Georgia with similar population sizes. The Atlanta police department provides yearly reports for crime including  type, location, time of day and other measurements.
 
 
 ## Delivering Data
 
-Jupyter notebook was used to run Python script in order to clean the dataset. Columns were renamed, the index was reset, and null values were dropped using the script found in the “crime_notebook.ipynb.” Seven different columns were deleted based on the data needed to visualize the crime rate.
+A Jupyter notebook was used to run Python script in order to clean the dataset. Columns were renamed, the index was reset, and null values were dropped using the script found in the “crime_notebook.ipynb.” Seven different columns were deleted based on the data needed to visualize the crime rate.
 
 ##### Deleting Columns
 del crime_data['ibr_code']
