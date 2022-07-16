@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlanta Crime Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Atlanta Crime 2021</h1>
+        <p>Use the interactive map and charts below to explore the 2021 crime dataset from the Atlanta PD</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class ="row">
+      <div class="col-md-12">
+        <div id="bar"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <h5>Neighborhood:</h5>
+          <select id="selDataset" onchange="optionSelected(this.value)"></select>
+        </div>
+      </div>
+    </div>  
+    <div class="row">
+      <div class = "col-md-12">
+        <h5>
+          Below are the Crime Visualizations for your Selected Neighborhood:
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="pie"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="line"></div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{url_for('static', filename='js/app.js')}}"></script>
+  <script src="{{url_for('static', filename='js/logic.js')}}"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</body>
+
+</html>
+
+<!-- <h3 class='display-4'>Graphs</h3>
+      <div class='graph-container'>
+        <div id="line"></div>
+        <div id="pie"></div>
+      </div> -->
+    <!-- <div class="row">
+      <div class="col-md-4">
+        <div id="line"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="pie"></div>
+      </div> -->
+      <!-- <div class="col-md-4">
+        <canvas id="pieChart"style= max-width:500px;></canvas>
+      </div> -->
+    <!-- <div class="row">  
+      <div class="col-md-4">
+        <canvas id="barChart"style= max-width:500px;></canvas>
+      </div>
+    </div>   -->
+    <!-- </div> -->
