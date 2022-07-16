@@ -33,7 +33,7 @@ cleaned_crime_df.to_sql('atl_crime2021', con=engine, if_exists = 'append', index
 
 ## Visualizing Data
 
-A dashboard with four different visuals were created using HTML, CSS, and  JavaScript libraries. The map and stacked bar chart were created using the library Plot.ly and consist of two different views. The bar charts and pie were created using the library Chart.js. 
+A dashboard with four different visuals were created using HTML, CSS, and  JavaScript libraries. The map and stacked bar chart were created using the library Plot.ly and Leaflet. The map consist of two different views. The bar charts and pie were created using the library Chart.js. 
 
 Below you will find the links to getting started with the different JavaScript libraries. 
 
