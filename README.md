@@ -60,9 +60,9 @@ The dashbard has three main features/objectives:
     * Have the map also filter based on the selection from the drop down. 
 
 ## Below you will find the links to getting started with the different JavaScript libraries. 
-## References 
+###  References 
 https://www.neighborhoodscout.com/ga/atlanta/crime#description
 https://www.atlantapd.org/i-want-to/crime-data-downloads
 
-## Plotly link
+###  Plotly link
 https://plotly.com/javascript/getting-started/
